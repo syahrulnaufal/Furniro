@@ -1,0 +1,17 @@
+.burger-nav li a:hover{
+    border-bottom: 1px solid black;
+}
+.burger-nav li a{
+    border-bottom: 1px solid transparent;
+}
+select:focus-visible{
+    outline: none;
+}
+.myfooter a:hover{
+    color: #B88E2F;
+    transition: all 0.3s ease;
+}
+.navbar-home li a,.navbar-acount li a{
+    padding: 0.6rem 1.2rem ;
+    padding-right: 0;
+}
