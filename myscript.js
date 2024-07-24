@@ -25,6 +25,6 @@ navbartext.forEach((e)=>{
         elem.stopImmediatePropagation();
         e.children[0].classList.add("text-body");
         e.children[0].style.color = "";
-        e.children[0].style.borderBottom = "0px solid #B88E2F";
+        e.children[0].style.borderBottom = "1px solid #ffffff";
     })
 })

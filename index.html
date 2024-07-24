@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="width: 100vw;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,7 +47,7 @@
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
-<body>
+<body style="width: 100vw;">
 
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid shadow">
@@ -76,7 +76,7 @@
             <a class="nav-link text-body poppins-regular" href="/contact/">Contact</a>
           </li>
         </ul>
-        <ul class="navbar-acount nav justify-content-lg-center justify-content-end p-0 burger-nav col-12 col-lg-3">
+        <ul class="navbar-acount nav justify-content-lg-center justify-content-end p-0 burger-nav col-12 col-lg-4">
           <li class="nav-item">
             <a class="nav-link" href="/">
               <img src="/icon/search.svg" alt="" width="20" height="24" class="d-inline-block align-text-top">
@@ -106,8 +106,12 @@
   <!-- akhir navbar -->
 
   <!-- jumbotron -->
-  <div class="card bg-dark text-white rounded-0 border-0 mb-4 overflow-hidden" style="height: 80vh;">
-    <img src="/img/chair2.png" class="card-img rounded-0" alt="chair-picture">
+  <div class="card bg-dark text-white rounded-0 border-0 mb-4 overflow-hidden" style="
+    height: 80vh;
+    background-image: url(/img/chair2.png);
+    background-size: cover;
+    background-position: bottom;
+    ">
     <div class="position-absolute p-4 d-none d-md-block border-0 bottom-0 end-0 shadow" 
     style="background-color: #FFF3E3;height: 300px; width: 500px;background-position-y: 0;margin: 3rem 5rem;">
       <p class="card-text text-body fs-6">New Arrival</p>
@@ -379,7 +383,7 @@
   <!-- slider -->
   <div class="container-fluid flex p-4 gap-5 ps-5" style="height: 80vh; overflow-x: scroll;">
     <div class="mytext col-4 p-5">
-      <h3 class="fw-bold mt-4" >50+ Beautiful rooms inspirations</h3>
+      <h3 class="fw-bold fs-1 mt-4" >50++ <br>Beautiful rooms inspirations</h3>
       <p class="text-black-50">Our designer already made a lot of beautiful prototipe of rooms that inspire you</p>
       <a href="/" class="btn text-white mt-3" style="width: 130px; background-color: #B88E2F;">Explore more</a>
     </div>
@@ -430,6 +434,90 @@
   </div>
   <!-- akhir slider  -->
   
+  <!-- showcase -->
+  <div class="w-100 p-0 my-showcase flex flex-column overflow-hidden" style="margin-top: 5rem;">
+
+    <div class="m-0 fs-5 text-center text-black-50">Share your setup with</div>
+
+    <div class="h1 text-center">
+      <a href="/" class="text-body text-decoration-none">#FurniroFurniture</a>
+    </div>
+
+    <div class="showcase p-0 flex justify-content-center" style="height: 80vh; width: 100vw;">
+      <div class="col-md-5 col-11 justify-content-center">
+        <div class="flex col-12 gap-2 p-2 h-50 w-100 align-items-end">
+          <div class="col-5" style="
+            height: 250px;
+            background-size: cover;
+            background-position: bottom;
+            background-image: url(/img/show9.png);
+          "></div>
+          <div class="col-7" style="
+            height: 200px;
+            background-size: cover;
+            background-position: bottom;
+            background-image: url(/img/show8.png);
+          "></div>
+        </div>
+
+        <div class="flex gap-2 p-2 col-12 h-50 w-100-2 align-items-start pt-0">
+          <div class="col-7" style="
+            height: 200px;
+            background-size: cover;
+            background-position: bottom;
+            background-image: url(/img/show6.png);
+          "></div>
+          <div class="col-5" style="
+            height: 250px;
+            background-size: cover;
+            background-position: bottom;
+            background-image: url(/img/show1.png);
+          "></div>
+        </div>
+
+      </div>
+      <div class="p-2 col-11 col-md-2 flex align-items-center">
+        <div style="
+          background-image: url('/img/show7.png');
+          background-size: contain; 
+          background-repeat: no-repeat; 
+          width: 100%; 
+          height: 300px;
+        "></div>
+      </div>
+      <div class="col-md-5 col-11">
+        <div class="flex col-12 gap-2 p-2 ps-0 h-50 w-100 align-items-end">
+          <div class="col-7" style="
+            height: 200px;
+            background-size: cover;
+            background-position: bottom;
+            background-image: url(/img/show3.png);
+          "></div>
+          <div class="col-5" style="
+            height: 250px;
+            background-size: cover;
+            background-position: bottom;
+            background-image: url(/img/show2.png);
+          "></div>
+        </div>
+
+        <div class="flex gap-2 p-2 col-12 h-50 w-100-2 align-items-start pt-0 ps-0">
+          <div class="col-5" style="
+            height: 250px;
+            background-size: cover;
+            background-position: bottom;
+            background-image: url(/img/show5.png);
+          "></div>
+          <div class="col-7" style="
+            height: 200px;
+            background-size: cover;
+            background-position: bottom;
+            background-image: url(/img/show4.png);
+          "></div>
+      </div>
+    </div>
+  </div>
+  <!-- akhir dari showcase -->
 
   <!-- footer -->
 

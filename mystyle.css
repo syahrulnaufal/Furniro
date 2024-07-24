@@ -2,7 +2,7 @@
     border-bottom: 1px solid black;
 }
 .burger-nav li a{
-    border-bottom: 1px solid transparent;
+    border-bottom: 1px solid white;
 }
 select:focus-visible{
     outline: none;
@@ -13,5 +13,9 @@ select:focus-visible{
 }
 .navbar-home li a,.navbar-acount li a{
     padding: 0.6rem 1.2rem ;
+    /* padding-right: 0; */
+}
+.navbar-home li:last-child a,.navbar-acount li:last-child a{
+    /* padding: 0.6rem 1.2rem ; */
     padding-right: 0;
 }
