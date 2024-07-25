@@ -19,3 +19,6 @@ select:focus-visible{
     /* padding: 0.6rem 1.2rem ; */
     padding-right: 0;
 }
+::-webkit-scrollbar {
+    display: none;
+}
