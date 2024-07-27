@@ -12,7 +12,7 @@ select:focus-visible{
     transition: all 0.3s ease;
 }
 .navbar-home li a,.navbar-acount li a{
-    padding: 0.6rem 1.2rem ;
+    padding: 0.6rem;
     /* padding-right: 0; */
 }
 .navbar-home li:last-child a,.navbar-acount li:last-child a{
@@ -21,4 +21,45 @@ select:focus-visible{
 }
 ::-webkit-scrollbar {
     display: none;
+}
+.jumbotron-card{
+    position: absolute;
+    background-color: #FFF3E3;
+    height: max-content;
+    width: 500px;
+    background-position-y: 0;
+    margin: 3rem 5rem;
+}
+.jumbotron-img{
+    height: 80vh;
+    background-image: url("img/chair2.png");
+    background-size: cover;
+    background-position: bottom;
+}
+
+@media screen and (max-width: 426px) {
+    .jumbotron-card{
+        width: 100vw;
+        margin: 0;
+        position: static;
+    }
+    .jumbotron-img{
+        height: 60vh;
+    }
+    html{
+        font-size: 13px;
+    }
+    .middle-img-showcase{
+        padding: .5rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    html{
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    html{
+       font-size: 24px;
+    }
 }
