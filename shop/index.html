@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="width: 100vw; overflow-x: hidden;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furniro - Home</title>
-    <link rel="stylesheet" href="/mystyle.css">
+    <link rel="stylesheet" href="shop-mystyle.css">
     <style>
        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@300;400;500;600;700&display=swap');
 
@@ -47,196 +47,422 @@
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
-<body>
+<body style="width: 100vw; overflow-x: hidden;">
+<!-- navbar -->
+<nav class="navbar px-0 navbar-expand-lg navbar-light bg-light container-fluid shadow">
+  <div class="row container-fluid justify-content-between">
+    <a class= "col-lg-3 col-9 navbar-brand text-body grey-900 montserrat align-self-start" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" href="/">
+        <img src="../icon/Logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+        Furniro
+    </a>
+    
+    <button class="navbar-toggler col-lg-1 col-2 end-0 border-0 row justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand text-body border-0 navbar-toggler grey-900 montserrat" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" href="/">
-                <img src="/icon/Logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                Furniro
-            </a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon">
-                </span>
-            </button>
-        <div class="container-fluid justify-content-between align-item-center  collapse navbar-collapse" id="navbarNav">
-            <a class="navbar-brand montserrat" href="/">
-                <img src="/icon/Logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                Furniro
-            </a>
-            <ul class="nav justify-content-center ms-5" style="font-size: 0.8rem;">
-                <li class="nav-item navbar-text" style="transition: all 0.2s ease;">
-                  <a class="nav-link text-body poppins-regular active" aria-current="page" href="/">Home</a>
-                </li>
-                <li class="nav-item navbar-text" style="transition: all 0.2s ease;">
-                  <a class="nav-link text-body poppins-regular" href="/shop/">Shop</a>
-                </li>
-                <li class="nav-item navbar-text" style="transition: all 0.2s ease;">
-                  <a class="nav-link text-body poppins-regular" href="/contact/">About</a>
-                </li>
-                <li class="nav-item navbar-text" style="transition: all 0.2s ease;">
-                  <a class="nav-link text-body poppins-regular" href="/contact/">Contact</a>
-                </li>
-              </ul>
-              <ul class="nav justify-content-center burger-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="/">
-                    <img src="/icon/search.svg" alt="" width="20" height="24" class="d-inline-block align-text-top">
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/">
-                    <img src="/icon/heart.svg" alt="" width="20" height="24" class="d-inline-block align-text-top">
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/cart/">
-                    <img src="/icon/shopping-cart.svg" alt="" width="20" height="24" class="d-inline-block align-text-top">
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/" >
-                    <img src="/icon/user.svg" alt="" width="20" height="24" class="d-inline-block align-text-top">
-                  </a>
-                </li>
-              </ul>
-          </div>
-        </div>
-      </nav>
+    <div class="col-lg-9 col-12 p-0 justify-content-lg-between justify-content-end  align-item-center collapse navbar-collapse container" id="navbarNav">
+      <ul class="navbar-home nav justify-content-lg-center justify-content-end ms-lg-5 col-lg-6 col-12 p-0" style="font-size: 0.8rem;">
+        <li class="nav-item navbar-text" style="transition: all 0.2s ease;">
+          <a class="nav-link text-body poppins-regular active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item navbar-text" style="transition: all 0.2s ease;">
+          <a class="nav-link text-body poppins-regular" href="shop/">Shop</a>
+        </li>
+        <li class="nav-item navbar-text" style="transition: all 0.2s ease;">
+          <a class="nav-link text-body poppins-regular" href="contact/">About</a>
+        </li>
+        <li class="nav-item navbar-text" style="transition: all 0.2s ease;">
+          <a class="nav-link text-body poppins-regular" href="contact/">Contact</a>
+        </li>
+      </ul>
+      <ul class="navbar-acount nav justify-content-lg-center justify-content-end p-0 burger-nav col-12 col-lg-4">
+        <li class="nav-item">
+          <a class="nav-link" href="/">
+            <img src="../icon/search.svg" alt="" width="20" height="24" class="d-inline-block align-text-top">
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <img src="../icon/heart.svg" alt="" width="20" height="24" class="d-inline-block align-text-top">
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/cart/">
+            <img src="../icon/shopping-cart.svg" alt="" width="20" height="24" class="d-inline-block align-text-top">
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/" >
+            <img src="../icon/user.svg" alt="" width="20" height="24" class="d-inline-block align-text-top">
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+  </div>
+</nav>
+<!-- akhir navbar -->
 
-      <div class="card bg-dark text-white border-0" style="border-radius: 0; height: 40vh;overflow: hidden;background-position-y: center;">
-        <img src="/img/liviing-room.png" alt="caffe chair">
-        <div class="white-filter position-absolute w-100 h-100" style="background-color: rgba(250,250,250,0.3);"></div>
-        <div class="card-img-overlay flex flex-column justify-content-center align-items-center">
-          <h5 class="card-title">
-            <img src="/icon/Logo.svg" alt="Furniro">
-          </h5>
-          <h4 class="card-text m-0 text-body">SHOP</h4>
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="/" class="text-decoration-none text-body">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Shop</li>
-            </ol>
-          </nav>
-        </div>
-      </div>
+<!-- jumbotron -->
+<div class="card bg-dark text-white border-0" style="border-radius: 0; height: 40vh;overflow: hidden;background-position-y: center;">
+  <img src="../img/liviing-room.png" alt="caffe chair">
+  <div class="white-filter position-absolute w-100 h-100" style="background-color: rgba(250,250,250,0.3);"></div>
+  <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+    <h5 class="card-title">
+      <img src="../icon/Logo.svg" alt="Furniro">
+    </h5>
+    <h4 class="card-text m-0 text-body">SHOP</h4>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/" class="text-decoration-none text-body">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Shop</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+<!-- endof jumbotron  -->
 
-      <div class="filter flex justify-content-around w-100" style="height: 15vh;background-color: #F9F1E7;" >
-        <div class="view2 w-auto flex justify-content-center align-items-center">
-          <div class="flex me-2" style="border-right: 1.5px solid black;">
-            <img src="/icon/filter.svg" alt="filter">
-            <p class="m-0 px-2">Filter</p>
-            <img src="/icon/view-grid.svg" alt="grid" class="px-2">
-            <img src="/icon/view-list.svg" alt="list" class="px-2">
-            <div class="px-1"></div>
-          </div>
-          <div class="showing">
-            showing
-            <span style="word-spacing: pre;"> 1 - 16 </span>
-            of
-            <span style="word-spacing: pre;"> 32 </span>
-            result
-          </div>
-        </div>
-        <div class="sort w-auto flex align-items-center justify-content-center">
-          <p class="m-0 px-1">show</p>
-          <select class="form-select p-1 ps-2 border-dark " aria-label="Default select example" style="width: auto;height: 35px; background-image: none;">
-            <option selected>16</option>
-            <option value="1">32</option>
-            <option value="2">64</option>
-            <option value="3">96</option>
-            <option value="4">128</option>
-            <option value="5">All</option>
-          </select>
-          <p class="m-0 px-1 ps-2">sort by </p>
-          <select class="form-select p-1 ps-2 border-dark" aria-label="Default select example" style="width: 100px;height: 35px; background-image: none;">
-            <option selected>default</option>
-            <option value="1">price</option>
-            <option value="2">view</option>
-            <option value="3">discount</option>
-          </select>
-        </div>
-      </div>
+<!-- filter -->
+<div class="filter justify-content-around d-flex container-fluid py-2 flex-wrap" style="background-color: #F9F1E7;" >
+  <div class="view2 col-12 col-sm-7 d-flex align-items-center ps-2 py-2">
+    <div class="d-flex me-2" style="border-right: 1.5px solid black;">
+      <img src="../icon/filter.svg" alt="filter">
+      <p class="m-0 px-2">Filter</p>
+      <img src="../icon/view-grid.svg" alt="grid" class="px-2">
+      <img src="../icon/view-list.svg" alt="list" class="px-2">
+      <div class="px-1"></div>
+    </div>
+    <div class="showing">
+      showing
+      <span style="word-spacing: pre;"> 1 - 16 </span>
+      of
+      <span style="word-spacing: pre;"> 32 </span>
+      result
+    </div>
+  </div>
+  <div class="sort col-12 col-sm-5 py-2 ps-2 d-flex align-items-center ">
+    <p class="m-0 px-1">show</p>
+    <select class="form-select p-1 ps-2 border-dark " aria-label="Default select example" style="width: auto;height: 35px; background-image: none;">
+      <option selected>16</option>
+      <option value="1">32</option>
+      <option value="2">64</option>
+      <option value="3">96</option>
+      <option value="4">128</option>
+      <option value="5">All</option>
+    </select>
+    <p class="m-0 px-1 ps-2">sort by </p>
+    <select class="form-select p-1 ps-2 border-dark" aria-label="Default select example" style="width: 100px;height: 35px; background-image: none;">
+      <option selected>default</option>
+      <option value="1">price</option>
+      <option value="2">view</option>
+      <option value="3">discount</option>
+    </select>
+  </div>
+</div>
+<!-- endof filter -->
 
-      <div class="card card-konten" style="width: 14rem;">
-        <div class="card card-hover position-absolute flex flex-column justify-content-center align-items-center" 
-        style="width: 14rem; height: 100%; background-color: rgba(50,50,50,0.5); z-index: 10; transition: all 0.2s ease; opacity: 0;">
-          <div class="konten flex flex-column justify-content-center align-items-center gap-1" style="width: 100%;">
+<!-- shop section -->
+<div class="ourproduct container-fluid">
+
+  <div class="row justify-content-center mt-5">
+    <!-- card -->
+    <div class="col-6 col-sm-3 col-md-3 p-3">  
+      <div class="card card-konten shadow p-0 w-100"style="">
+        <div class="card card-hover position-absolute d-flex flex-column justify-content-center align-items-center" 
+        style="width: 100%; height: 100%; background-color: rgba(50,50,50,0.5); z-index: 10; transition: all 0.2s ease; opacity: 0;">
+          <div class="konten d-flex flex-column justify-content-center align-items-center gap-1" style="width: 100%;">
             <div class="add-cart text-center rounded bg-white pb-1" style="width: 80%; color: #B88E2F; cursor: pointer;">add to cart</div>
-            <div class="flex justify-content-evenly text-white" style="width: 100%; cursor: pointer;">
-              <p class="share m-0"><img class="p-1" src="/icon/share.svg" alt="">share</p>
-              <p class="share m-0"><img class="p-1" src="/icon/compare-icon.svg" alt="">compare</p>
-              <p class="share m-0"><img class="p-1" src="/icon/heart-white.svg" alt="">like</p>
+            <div class="d-flex justify-content-evenly text-white" style="width: 100%; cursor: pointer;">
+              <p class="share m-0"><img class="p-1" src="../icon/share.svg" alt="">share</p>
+              <p class="share m-0"><img class="p-1" src="../icon/compare-icon.svg" alt="">compare</p>
+              <p class="share m-0"><img class="p-1" src="../icon/heart-white.svg" alt="">like</p>
             </div>
           </div>
         </div>
-        <div class="diskon rounded-circle bg-success position-absolute end-0 top-0 m-2 flex justify-content-center align-items-center" style="width: 40px; height: 40px; font-size: 0.8rem;">
+        <div class="diskon rounded-circle bg-success position-absolute end-0 top-0 m-2 d-flex justify-content-center align-items-center" style="width: 40px; height: 40px; font-size: 0.8rem;">
           <p class="m-0 text-white" style="height: fit-content;">-30%</p> 
         </div>
-        <img src="/img/img1.png" class="card-img-top" alt="product image">
+        <img src="../img/img1.png" class="card-img-top" alt="product image">
         <div class="p-3 flex-column gap-2 bg-light">
           <h5 class="card-title mb-1">Syltherine</h5>
           <p class="card-text mb-0">stylish cafe chair</p>
-          <div class="flex gap-2">
-            <p class="card-text m-0">Rp 2.500.000</p>
+          <div class="gap-2 mt-2">
             <p class="card-text m-0 text-muted"><s> Rp 3.500.000 </s> </p>
+            <p class="card-text m-0 fs-5">Rp 2.500.000</p>
           </div>
         </div>
       </div>
-
-      <div class="card card-konten" style="width: 14rem;">
-        <div class="card card-hover position-absolute flex flex-column justify-content-center align-items-center" 
-        style="width: 14rem; height: 100%; background-color: rgba(50,50,50,0.5); z-index: 10; transition: all 0.2s ease; opacity: 0;">
-          <div class="konten flex flex-column justify-content-center align-items-center gap-1" style="width: 100%;">
+    </div>
+    <div class="col-6 col-sm-3 col-md-3 p-3">  
+      <div class="card card-konten shadow p-0 w-100"style="">
+        <div class="card card-hover position-absolute d-flex flex-column justify-content-center align-items-center" 
+        style="width: 100%; height: 100%; background-color: rgba(50,50,50,0.5); z-index: 10; transition: all 0.2s ease; opacity: 0;">
+          <div class="konten d-flex flex-column justify-content-center align-items-center gap-1" style="width: 100%;">
             <div class="add-cart text-center rounded bg-white pb-1" style="width: 80%; color: #B88E2F; cursor: pointer;">add to cart</div>
-            <div class="flex justify-content-evenly text-white" style="width: 100%; cursor: pointer;">
-              <p class="share m-0"><img class="p-1" src="/icon/share.svg" alt="">share</p>
-              <p class="share m-0"><img class="p-1" src="/icon/compare-icon.svg" alt="">compare</p>
-              <p class="share m-0"><img class="p-1" src="/icon/heart-white.svg" alt="">like</p>
+            <div class="d-flex justify-content-evenly text-white" style="width: 100%; cursor: pointer;">
+              <p class="share m-0"><img class="p-1" src="../icon/share.svg" alt="">share</p>
+              <p class="share m-0"><img class="p-1" src="../icon/compare-icon.svg" alt="">compare</p>
+              <p class="share m-0"><img class="p-1" src="../icon/heart-white.svg" alt="">like</p>
             </div>
           </div>
         </div>
-        <div class="diskon rounded-circle bg-success position-absolute end-0 top-0 m-2 flex justify-content-center align-items-center" style="width: 40px; height: 40px; font-size: 0.8rem;">
+        <div class="diskon rounded-circle bg-success position-absolute end-0 top-0 m-2 d-flex justify-content-center align-items-center" style="width: 40px; height: 40px; font-size: 0.8rem;">
           <p class="m-0 text-white" style="height: fit-content;">-30%</p> 
         </div>
-        <img src="/img/img1.png" class="card-img-top" alt="product image">
+        <img src="../img/img1.png" class="card-img-top" alt="product image">
         <div class="p-3 flex-column gap-2 bg-light">
           <h5 class="card-title mb-1">Syltherine</h5>
           <p class="card-text mb-0">stylish cafe chair</p>
-          <div class="flex gap-2">
-            <p class="card-text m-0">Rp 2.500.000</p>
+          <div class="gap-2 mt-2">
             <p class="card-text m-0 text-muted"><s> Rp 3.500.000 </s> </p>
+            <p class="card-text m-0 fs-5">Rp 2.500.000</p>
           </div>
         </div>
       </div>
-
-      <div class="card card-konten" style="width: 14rem;">
-        <div class="card card-hover position-absolute flex flex-column justify-content-center align-items-center" 
-        style="width: 14rem; height: 100%; background-color: rgba(50,50,50,0.5); z-index: 10; transition: all 0.2s ease; opacity: 0;">
-          <div class="konten flex flex-column justify-content-center align-items-center gap-1" style="width: 100%;">
+    </div>
+    <div class="col-6 col-sm-3 col-md-3 p-3">  
+      <div class="card card-konten shadow p-0 w-100"style="">
+        <div class="card card-hover position-absolute d-flex flex-column justify-content-center align-items-center" 
+        style="width: 100%; height: 100%; background-color: rgba(50,50,50,0.5); z-index: 10; transition: all 0.2s ease; opacity: 0;">
+          <div class="konten d-flex flex-column justify-content-center align-items-center gap-1" style="width: 100%;">
             <div class="add-cart text-center rounded bg-white pb-1" style="width: 80%; color: #B88E2F; cursor: pointer;">add to cart</div>
-            <div class="flex justify-content-evenly text-white" style="width: 100%; cursor: pointer;">
-              <p class="share m-0"><img class="p-1" src="/icon/share.svg" alt="">share</p>
-              <p class="share m-0"><img class="p-1" src="/icon/compare-icon.svg" alt="">compare</p>
-              <p class="share m-0"><img class="p-1" src="/icon/heart-white.svg" alt="">like</p>
+            <div class="d-flex justify-content-evenly text-white" style="width: 100%; cursor: pointer;">
+              <p class="share m-0"><img class="p-1" src="../icon/share.svg" alt="">share</p>
+              <p class="share m-0"><img class="p-1" src="../icon/compare-icon.svg" alt="">compare</p>
+              <p class="share m-0"><img class="p-1" src="../icon/heart-white.svg" alt="">like</p>
             </div>
           </div>
         </div>
-        <div class="diskon rounded-circle bg-success position-absolute end-0 top-0 m-2 flex justify-content-center align-items-center" style="width: 40px; height: 40px; font-size: 0.8rem;">
+        <div class="diskon rounded-circle bg-success position-absolute end-0 top-0 m-2 d-flex justify-content-center align-items-center" style="width: 40px; height: 40px; font-size: 0.8rem;">
           <p class="m-0 text-white" style="height: fit-content;">-30%</p> 
         </div>
-        <img src="/img/img1.png" class="card-img-top" alt="product image">
+        <img src="../img/img1.png" class="card-img-top" alt="product image">
         <div class="p-3 flex-column gap-2 bg-light">
           <h5 class="card-title mb-1">Syltherine</h5>
           <p class="card-text mb-0">stylish cafe chair</p>
-          <div class="flex gap-2">
-            <p class="card-text m-0">Rp 2.500.000</p>
+          <div class="gap-2 mt-2">
             <p class="card-text m-0 text-muted"><s> Rp 3.500.000 </s> </p>
+            <p class="card-text m-0 fs-5">Rp 2.500.000</p>
           </div>
         </div>
       </div>
+    </div>
+    <div class="col-6 col-sm-3 col-md-3 p-3">  
+      <div class="card card-konten shadow p-0 w-100"style="">
+        <div class="card card-hover position-absolute d-flex flex-column justify-content-center align-items-center" 
+        style="width: 100%; height: 100%; background-color: rgba(50,50,50,0.5); z-index: 10; transition: all 0.2s ease; opacity: 0;">
+          <div class="konten d-flex flex-column justify-content-center align-items-center gap-1" style="width: 100%;">
+            <div class="add-cart text-center rounded bg-white pb-1" style="width: 80%; color: #B88E2F; cursor: pointer;">add to cart</div>
+            <div class="d-flex justify-content-evenly text-white" style="width: 100%; cursor: pointer;">
+              <p class="share m-0"><img class="p-1" src="../icon/share.svg" alt="">share</p>
+              <p class="share m-0"><img class="p-1" src="../icon/compare-icon.svg" alt="">compare</p>
+              <p class="share m-0"><img class="p-1" src="../icon/heart-white.svg" alt="">like</p>
+            </div>
+          </div>
+        </div>
+        <div class="diskon rounded-circle bg-success position-absolute end-0 top-0 m-2 d-flex justify-content-center align-items-center" style="width: 40px; height: 40px; font-size: 0.8rem;">
+          <p class="m-0 text-white" style="height: fit-content;">-30%</p> 
+        </div>
+        <img src="../img/img1.png" class="card-img-top" alt="product image">
+        <div class="p-3 flex-column gap-2 bg-light">
+          <h5 class="card-title mb-1">Syltherine</h5>
+          <p class="card-text mb-0">stylish cafe chair</p>
+          <div class="gap-2 mt-2">
+            <p class="card-text m-0 text-muted"><s> Rp 3.500.000 </s> </p>
+            <p class="card-text m-0 fs-5">Rp 2.500.000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-3 col-md-3 p-3">  
+      <div class="card card-konten shadow p-0 w-100"style="">
+        <div class="card card-hover position-absolute d-flex flex-column justify-content-center align-items-center" 
+        style="width: 100%; height: 100%; background-color: rgba(50,50,50,0.5); z-index: 10; transition: all 0.2s ease; opacity: 0;">
+          <div class="konten d-flex flex-column justify-content-center align-items-center gap-1" style="width: 100%;">
+            <div class="add-cart text-center rounded bg-white pb-1" style="width: 80%; color: #B88E2F; cursor: pointer;">add to cart</div>
+            <div class="d-flex justify-content-evenly text-white" style="width: 100%; cursor: pointer;">
+              <p class="share m-0"><img class="p-1" src="../icon/share.svg" alt="">share</p>
+              <p class="share m-0"><img class="p-1" src="../icon/compare-icon.svg" alt="">compare</p>
+              <p class="share m-0"><img class="p-1" src="../icon/heart-white.svg" alt="">like</p>
+            </div>
+          </div>
+        </div>
+        <div class="diskon rounded-circle bg-success position-absolute end-0 top-0 m-2 d-flex justify-content-center align-items-center" style="width: 40px; height: 40px; font-size: 0.8rem;">
+          <p class="m-0 text-white" style="height: fit-content;">-30%</p> 
+        </div>
+        <img src="../img/img1.png" class="card-img-top" alt="product image">
+        <div class="p-3 flex-column gap-2 bg-light">
+          <h5 class="card-title mb-1">Syltherine</h5>
+          <p class="card-text mb-0">stylish cafe chair</p>
+          <div class="gap-2 mt-2">
+            <p class="card-text m-0 text-muted"><s> Rp 3.500.000 </s> </p>
+            <p class="card-text m-0 fs-5">Rp 2.500.000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-3 col-md-3 p-3">  
+      <div class="card card-konten shadow p-0 w-100"style="">
+        <div class="card card-hover position-absolute d-flex flex-column justify-content-center align-items-center" 
+        style="width: 100%; height: 100%; background-color: rgba(50,50,50,0.5); z-index: 10; transition: all 0.2s ease; opacity: 0;">
+          <div class="konten d-flex flex-column justify-content-center align-items-center gap-1" style="width: 100%;">
+            <div class="add-cart text-center rounded bg-white pb-1" style="width: 80%; color: #B88E2F; cursor: pointer;">add to cart</div>
+            <div class="d-flex justify-content-evenly text-white" style="width: 100%; cursor: pointer;">
+              <p class="share m-0"><img class="p-1" src="../icon/share.svg" alt="">share</p>
+              <p class="share m-0"><img class="p-1" src="../icon/compare-icon.svg" alt="">compare</p>
+              <p class="share m-0"><img class="p-1" src="../icon/heart-white.svg" alt="">like</p>
+            </div>
+          </div>
+        </div>
+        <div class="diskon rounded-circle bg-success position-absolute end-0 top-0 m-2 d-flex justify-content-center align-items-center" style="width: 40px; height: 40px; font-size: 0.8rem;">
+          <p class="m-0 text-white" style="height: fit-content;">-30%</p> 
+        </div>
+        <img src="../img/img1.png" class="card-img-top" alt="product image">
+        <div class="p-3 flex-column gap-2 bg-light">
+          <h5 class="card-title mb-1">Syltherine</h5>
+          <p class="card-text mb-0">stylish cafe chair</p>
+          <div class="gap-2 mt-2">
+            <p class="card-text m-0 text-muted"><s> Rp 3.500.000 </s> </p>
+            <p class="card-text m-0 fs-5">Rp 2.500.000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-3 col-md-3 p-3">  
+      <div class="card card-konten shadow p-0 w-100"style="">
+        <div class="card card-hover position-absolute d-flex flex-column justify-content-center align-items-center" 
+        style="width: 100%; height: 100%; background-color: rgba(50,50,50,0.5); z-index: 10; transition: all 0.2s ease; opacity: 0;">
+          <div class="konten d-flex flex-column justify-content-center align-items-center gap-1" style="width: 100%;">
+            <div class="add-cart text-center rounded bg-white pb-1" style="width: 80%; color: #B88E2F; cursor: pointer;">add to cart</div>
+            <div class="d-flex justify-content-evenly text-white" style="width: 100%; cursor: pointer;">
+              <p class="share m-0"><img class="p-1" src="../icon/share.svg" alt="">share</p>
+              <p class="share m-0"><img class="p-1" src="../icon/compare-icon.svg" alt="">compare</p>
+              <p class="share m-0"><img class="p-1" src="../icon/heart-white.svg" alt="">like</p>
+            </div>
+          </div>
+        </div>
+        <div class="diskon rounded-circle bg-success position-absolute end-0 top-0 m-2 d-flex justify-content-center align-items-center" style="width: 40px; height: 40px; font-size: 0.8rem;">
+          <p class="m-0 text-white" style="height: fit-content;">-30%</p> 
+        </div>
+        <img src="../img/img1.png" class="card-img-top" alt="product image">
+        <div class="p-3 flex-column gap-2 bg-light">
+          <h5 class="card-title mb-1">Syltherine</h5>
+          <p class="card-text mb-0">stylish cafe chair</p>
+          <div class="gap-2 mt-2">
+            <p class="card-text m-0 text-muted"><s> Rp 3.500.000 </s> </p>
+            <p class="card-text m-0 fs-5">Rp 2.500.000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-3 col-md-3 p-3">  
+      <div class="card card-konten shadow p-0 w-100"style="">
+        <div class="card card-hover position-absolute d-flex flex-column justify-content-center align-items-center" 
+        style="width: 100%; height: 100%; background-color: rgba(50,50,50,0.5); z-index: 10; transition: all 0.2s ease; opacity: 0;">
+          <div class="konten d-flex flex-column justify-content-center align-items-center gap-1" style="width: 100%;">
+            <div class="add-cart text-center rounded bg-white pb-1" style="width: 80%; color: #B88E2F; cursor: pointer;">add to cart</div>
+            <div class="d-flex justify-content-evenly text-white" style="width: 100%; cursor: pointer;">
+              <p class="share m-0"><img class="p-1" src="../icon/share.svg" alt="">share</p>
+              <p class="share m-0"><img class="p-1" src="../icon/compare-icon.svg" alt="">compare</p>
+              <p class="share m-0"><img class="p-1" src="../icon/heart-white.svg" alt="">like</p>
+            </div>
+          </div>
+        </div>
+        <div class="diskon rounded-circle bg-success position-absolute end-0 top-0 m-2 d-flex justify-content-center align-items-center" style="width: 40px; height: 40px; font-size: 0.8rem;">
+          <p class="m-0 text-white" style="height: fit-content;">-30%</p> 
+        </div>
+        <img src="../img/img1.png" class="card-img-top" alt="product image">
+        <div class="p-3 flex-column gap-2 bg-light">
+          <h5 class="card-title mb-1">Syltherine</h5>
+          <p class="card-text mb-0">stylish cafe chair</p>
+          <div class="gap-2 mt-2">
+            <p class="card-text m-0 text-muted"><s> Rp 3.500.000 </s> </p>
+            <p class="card-text m-0 fs-5">Rp 2.500.000</p>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </div>
+  <div class="row justify-content-center p-5 gap-2">
+    <a href="/" class="btn my-btn my-btn-aktif" style="width: fit-content;">1</a>
+    <a href="/" class="btn my-btn" style="width: fit-content;">2</a>
+    <a href="/" class="btn my-btn" style="width: fit-content;">3</a>
+    <a href="/" class="btn my-btn" style="width: fit-content;">4</a>
+    <a href="/" class="btn my-btn" style="width: auto;">. . .</a>
+  </div>
+</div>
+<!-- endof shop section  -->
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-      <script src="/myscript.js"></script>
+<!-- quality section  -->
+<div class="container-fluid d-flex flex-wrap" style="height: max-content; min-height: 12rem; background-color: #F9F1E7;">
+  <div class="quality col-12 col-sm-6 col-md-3 d-flex p-3 mt-3">
+    <img class="quality-icon col-2" src="../icon/trophy 1.svg" style="background-size: cover; background-repeat: no-repeat;">
+    <div class="text-body ps-3 col-10 d-flex flex-column justify-content-center">
+      <div class="fw-bold fs-5">High Quality</div>
+      <div class="text-black-50">Crafted from Top Materials</div>
+    </div>
+  </div>
+  <div class="quality col-12 col-sm-6 col-md-3 d-flex p-3 mt-3">
+    <img class="quality-icon col-2" src="../icon/guarantee.svg" style="background-size: cover;  background-repeat: no-repeat;">
+    <div class="text-body ps-3 col-10 d-flex flex-column justify-content-center">
+      <div class="fw-bold fs-5">Warranty Protection</div>
+      <div class="text-black-50">Over 2 years</div>
+    </div>
+  </div>
+  <div class="quality col-12 col-sm-6 col-md-3 d-flex p-3 mt-3">
+    <img class="quality-icon col-2" src="../icon/shipping.svg" style="background-size: cover; background-repeat: no-repeat;">
+    <div class="text-body ps-3 col-10 d-flex flex-column justify-content-center">
+      <div class="fw-bold fs-5">Free Shipping</div>
+      <div class="text-black-50">Order over $150</div>
+    </div>
+  </div>
+  <div class="quality col-12 col-sm-6 col-md-3 d-flex p-3 mt-3">
+    <img class="quality-icon col-2" src="../icon/customer-support.svg"background-size: cover; : 5rem; background-repeat: no-repeat;">
+    <div class="text-body ps-3 col-10 d-flex flex-column justify-content-center">
+      <div class="fw-bold fs-5">24 / 7 Support</div>
+      <div class="text-black-50">Dedicated support</div>
+    </div>
+  </div>
+</div>
+<!-- endof quality section  -->
+
+<!-- footer -->
+<div class="myfooter pt-3 d-flex flex-column align-items-center" 
+style="border-top: 1px solid rgba(50,50,50,0.5);">
+  <div class="container-fluid row footer-main " style="min-height: 60vh;">
+    <div class="col-lg-4 col-10 d-flex flex-column p-3 h-100" style="margin-bottom: 3rem;">
+      <h4 class="m-0 mb-5 fs-3" style="height: 10%;">Funiro</h4>
+      <p class="m-0">Aesthetic Furniture</p>
+      <p class="m-0">Tawangmas, Kec. Semarang Barat, Kota Semarang, Jawa Tengah 50144</p>
+    </div>
+    <div class="col-lg-2 col-md-4 col-5 d-flex flex-column h-100 p-3">
+      <p class=" titel m-0 text-black-50 mb-5" style="height: 10%;">Links</p>
+      <p class="mb-4"><a class="text-decoration-none link-dark" href="#">home</a></p>
+      <p class="mb-4"><a class="text-decoration-none link-dark" href="shop/">shop</a></p>
+      <p class="mb-4"><a class="text-decoration-none link-dark" href="contact/">about</a></p>
+      <p class="mb-4"><a class="text-decoration-none link-dark" href="contact/">contact</a></p>
+    </div>
+    <div class="col-lg-2 col-md-4 col-5 d-flex flex-column h-100 p-3">
+      <p class=" titel m-0 text-black-50 mb-5" style="height: 10%;">Help</p>
+      <p class="mb-4"><a class="text-decoration-none link-dark" href="#">Payment options</a></p>
+      <p class="mb-4"><a class="text-decoration-none link-dark" href="shop/">Returns</a></p>
+      <p class="mb-4"><a class="text-decoration-none link-dark" href="contact/">Privacy Policies</a></p>
+    </div>
+    <div class="col-lg-4 col-md-4 col-10 d-flex flex-column h-100 p-3" >
+      <p class=" titel m-0 text-black-50 mb-5" style="height: 10%;">Newsletter</p>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="enter email" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Subscribe</button>
+      </div>
+    </div>
+  </div>
+  <div class="mt-5 mycopyright d-flex justify-content-center align-items-center" style="width: 85%; border-top: 1px solid rgba(50,50,50,0.5);height: 10vh;">
+    <p class="p-0 m-0" >2024 © syahrul naufal Allright reserved</p>
+  </div>
+</div>
+<!-- akhir footer  -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="../myscript.js"></script>
 </body>
 </html>

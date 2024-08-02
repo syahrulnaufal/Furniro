@@ -1,0 +1,27 @@
+.my-btn-aktif, .my-btn:hover{
+    background-color: #B88E2F!important;
+    color : whitesmoke!important;
+}
+.my-btn{
+    background-color: white;
+    color: grey;
+}
+
+
+
+/* responsivity */
+@media screen and (max-width: 426px) {
+    html{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 768px) {
+    html{
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    html{
+       font-size: 24px;
+    }
+}
